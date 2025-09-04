@@ -59,14 +59,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "c08606f8c3cbf4ce6ec8e28fb0014a2c086708fe954eaa885384a6165172e7e8"
 
 [[package]]
-name = "binomial_coefficient-calc-cli"
-version = "0.0.1"
-dependencies = [
- "clap",
- "num-bigint",
-]
-
-[[package]]
 name = "clap"
 version = "4.5.47"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -123,6 +115,14 @@ name = "is_terminal_polyfill"
 version = "1.70.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "7943c866cc5cd64cbc25b2e01621d07fa8eb2a1a23160ee81ce38704e97b8ecf"
+
+[[package]]
+name = "nCr_calc"
+version = "0.0.1"
+dependencies = [
+ "clap",
+ "num-bigint",
+]
 
 [[package]]
 name = "num-bigint"
