@@ -2,7 +2,13 @@ use crate::factorial::getfactorial;
 use num_bigint::BigUint;
 
 pub fn get_binomial_coefficient(n: u64, r: u64) -> BigUint {
-    return getfactorial(n) / (getfactorial(r) * getfactorial(n - r));
+    let mut res = BigUint::from(1_u64);
+
+    for i in (r + 1)..=n {
+        res *= BigUint::from(i);
+    }
+
+    return res / getfactorial(n - r);
 }
 
 #[cfg(test)]
