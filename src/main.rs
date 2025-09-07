@@ -1,7 +1,6 @@
 mod calc_binomial_coefficient;
 mod factorial;
 
-#[warn(unused_variables)]
 use clap::Parser;
 use std::process;
 
